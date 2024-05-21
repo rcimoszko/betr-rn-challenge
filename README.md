@@ -1,6 +1,7 @@
 ## Betr React Native Technical Interview
 
 👉 Setup:
+
 The repo you will be cloning down is a react native expo project. Please ensure you have your environment setup and can run an iOS or android simulator as you will be required to have it open while working on this task.
 
 You can clone the project at:
