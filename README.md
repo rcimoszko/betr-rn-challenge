@@ -1,32 +1,54 @@
-## Betr React Native Technical Interview
+# Betr Sportsbook - React Native Challenge
 
-👉 Setup:
+An NBA sportsbook app built with React Native and Expo. Browse upcoming NBA games, view betting lines (spread, moneyline, total), and build a bet slip with straight or parlay wagers.
 
-The repo you will be cloning down is a react native expo project. Please ensure you have your environment setup and can run an iOS or android simulator as you will be required to have it open while working on this task.
+## Getting Started
 
-You can clone the project at:
+### Prerequisites
+
+- Node.js 20+
+- Expo CLI (`npx expo`)
+- iOS Simulator (Xcode) or Android Emulator
+
+### Installation
+
+```bash
+npm install
+```
+
+### Running the App
+
+```bash
+npx expo start
+```
+
+Then press `i` for iOS simulator or `a` for Android emulator.
+
+## Features
+
+- Browse upcoming NBA games with live odds
+- Search/filter games by team name
+- Pull-to-refresh game list
+- Simulated live odds movement
+- Game detail view with full betting markets
+- Bet slip with straight and parlay modes
+- Wager input with payout calculation
+
+## Tech Stack
+
+- Expo SDK 54
+- React Native 0.81
+- React Navigation (Native Stack)
+- TypeScript
+
+## Project Structure
 
 ```
-git clone https://github.com/rcimoszko/betr-rn-challenge.git
+src/
+  api/          - Mock data and API layer
+  components/   - Reusable UI components
+  navigation/   - React Navigation setup
+  screens/      - App screens
+  types/        - TypeScript type definitions
+  utils/        - Utility functions
 ```
-
-Run `yarn install` and then `yarn ios` to get started.
-
-👉 Challenge Requirements:
-- Fetch a list of games. An async function (`fetchGames()`) is provided that will give you a list of games.
-- Display the games in a vertical scrollable list with the following information:
-  - homeTeam
-  - awayTeam
-  - date
-- Show a loading indicator while fetching data
-- Clicking on a game should display the title `"{homeTeam} vs {awayTeam}"` above the list.
-- Add the ability to select a game by clicking on it. 
-  - The selected game should be highlighted in the list.
-  - Only 1 game can be selected at a time.
-  - Ability to deselect a game by clicking on it again.
-
-Optional:
-* Apply render optimizations if needed
-* Create a custom hook for fetching data
-* Group the games by date and display the date above each group
-* Add pull to refresh functionality to the list
