@@ -76,7 +76,7 @@ export default function HomeScreen({ navigation, betSlip, setBetSlip, parlayMode
         });
         return updated;
       });
-    }, 3000);
+    }, 20000);
   }, [games]);
 
   const loadGames = async () => {
