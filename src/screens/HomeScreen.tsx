@@ -46,6 +46,7 @@ export default function HomeScreen({ navigation, betSlip, setBetSlip, parlayMode
     loadGames();
   }, []);
 
+  // Simulate live odds movement every 20 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setLiveOdds((prev: any) => {
